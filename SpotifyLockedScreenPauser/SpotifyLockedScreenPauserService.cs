@@ -47,6 +47,9 @@ namespace SpotifyLockedScreenPauser
                 {
                     _wasPlaying = true;
                     _spotify.Pause();
+                } else
+                {
+                    _wasPlaying = false;
                 }
             }
         }
@@ -57,7 +60,6 @@ namespace SpotifyLockedScreenPauser
             {
                 if (_wasPlaying)
                 {
-                    _wasPlaying = true;
                     _spotify.Play();
                 }
             }
